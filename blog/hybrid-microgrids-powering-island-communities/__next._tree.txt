@@ -1,5 +1,5 @@
-:HL["/enervox-energy/_next/static/chunks/0foc9wu5uvrfn.css","style"]
+:HL["/enervox-energy/_next/static/chunks/23imbuv7hx46-.css","style"]
 3:[["children",{"s":"__PAGE__","h":160}]]
 2:[["children",{"s":{"n":"slug","t":"d","k":"hybrid-microgrids-powering-island-communities","s":[]},"h":96,"c":"$Q3"}]]
 1:[["children",{"s":"blog","h":64,"c":"$Q2"}]]
-0:{"b":"7JWwAG8_RkKj6ZW4vWeEP","t":{"t":{"s":"","h":16,"c":"$Q1"}}}
+0:{"b":"OUge6oFmgfSZS2aMP6R9y","t":{"t":{"s":"","h":16,"c":"$Q1"}}}
