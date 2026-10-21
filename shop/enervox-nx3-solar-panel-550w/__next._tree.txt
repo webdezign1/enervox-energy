@@ -1,5 +1,5 @@
-:HL["/enervox-energy/_next/static/chunks/340titjfm5irc.css","style"]
+:HL["/enervox-energy/_next/static/chunks/1knb-p2q_l-4h.css","style"]
 3:[["children",{"s":"__PAGE__","h":160}]]
 2:[["children",{"s":{"n":"slug","t":"d","k":"enervox-nx3-solar-panel-550w","s":[]},"h":96,"c":"$Q3"}]]
 1:[["children",{"s":"shop","h":64,"c":"$Q2"}]]
-0:{"b":"eNSBy7TkE3fB3iEChqnzB","t":{"t":{"s":"","h":16,"c":"$Q1"}}}
+0:{"b":"LD6j6waqFnJh2uNxScjTL","t":{"t":{"s":"","h":16,"c":"$Q1"}}}
