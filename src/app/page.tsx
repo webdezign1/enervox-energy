@@ -1,69 +1,54 @@
-import Image from "next/image";
+import { HeroSlider } from '@/components/home/HeroSlider';
+import { StatsStrip } from '@/components/home/StatsStrip';
+import { AboutSection } from '@/components/home/AboutSection';
+import { WhyChooseUsSection } from '@/components/home/WhyChooseUsSection';
+import { ServicesStrip } from '@/components/home/ServicesStrip';
+import { PartnersCarousel } from '@/components/home/PartnersCarousel';
+import { ServiceCategoriesList } from '@/components/home/ServiceCategoriesList';
+import { FactsSection } from '@/components/home/FactsSection';
+import { PortfolioSection } from '@/components/home/PortfolioSection';
+import { TestimonialsSection } from '@/components/home/TestimonialsSection';
+import { LatestNewsSection } from '@/components/home/LatestNewsSection';
+import { CtaBanner } from '@/components/home/CtaBanner';
 
-export default function Home() {
+export default function HomePage() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert h-5 w-[100px]"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the{" "}
-            <code className="rounded bg-black/[.06] px-1.5 py-0.5 font-mono text-[0.9em] dark:bg-white/[.08]">
-              page.tsx
-            </code>{" "}
-            file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert h-[14px] w-4"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+    <>
+      {/* 1. Hero Slider (full width, 3 slides, fade/slide transitions, H1 on two lines, orange Learn More, secondary Telegram, video modal, tags) */}
+      <HeroSlider />
+
+      {/* 2. Animated Stats Strip (3 counters: 18000+ MW capacity, 12000+ WTGs, 2450+ customers) */}
+      <StatsStrip />
+
+      {/* 3. About ("who we are"): overlapping images, H2 "We are the Best-In-Class Products & Solutions", About link, Download Brochure button */}
+      <AboutSection />
+
+      {/* 4. Why Choose Us: H2 "We are Building a Sustainable Future" with 3 icon-boxes */}
+      <WhyChooseUsSection />
+
+      {/* 5. Services Strip: 2 image cards (Enhanced Services, Maintenance Services) with text overlay & hover zoom */}
+      <ServicesStrip />
+
+      {/* 6. Partners / Logo Carousel: 6 logos, gray by default, color on hover, auto-scrolling */}
+      <PartnersCarousel />
+
+      {/* 7. Service Categories List: 3 large numbered rows (01 Wind Turbines, 02 Solar Panels, 03 Hybrid Energy) with hover image reveal */}
+      <ServiceCategoriesList />
+
+      {/* 8. Facts Section ("Greener Tomorrow for Everyone"): paragraph + 3 animated progress bars (68%, 85%, 25%) + CTA consultancy bar */}
+      <FactsSection />
+
+      {/* 9. Portfolio ("Our Latest Case Studies"): category filter tabs, 12 portrait cards (about 390x495), hover overlay */}
+      <PortfolioSection />
+
+      {/* 10. Testimonials: left image, right slider with large quote, client name, role ("Client of Company"), arrows */}
+      <TestimonialsSection />
+
+      {/* 11. Latest News: 4 blog cards (840x620 image, category, date, author, title, excerpt, "Read More"), with More link */}
+      <LatestNewsSection />
+
+      {/* 12. CTA Banner: "Have Questions? We are Here to Help You!", subtext, big "24/7" badge, "Learn More" button */}
+      <CtaBanner />
+    </>
   );
 }
